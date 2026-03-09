@@ -45,3 +45,9 @@ var path = 'C:\\Users\\John'; // Using backslashes in a file path
 console.log(path);
 var multiline = "This is a multi-line string.\nIt spans multiple lines.";
 console.log(multiline);
+
+// String Concatenation
+var firstName = "John";
+var lastName = "Doe";
+var fullName = firstName + " " + lastName; // fullName is now "John Doe"
+console.log(fullName);
