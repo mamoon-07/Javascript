@@ -79,3 +79,10 @@ console.log(multiDimensionalArray[0][0][0]); // Output: 1
 console.log(multiDimensionalArray[0][1][1]); // Output: 4
 console.log(multiDimensionalArray[1][0][0]); // Output: 5
 console.log(multiDimensionalArray[1][1][1]); // Output: 8
+
+// Push() and Pop() Methods
+var numbers = [1, 2, 3];
+numbers.push(4); // numbers is now [1, 2, 3, 4]
+console.log(numbers);
+numbers.pop(); // numbers is now [1, 2, 3]
+console.log(numbers);
