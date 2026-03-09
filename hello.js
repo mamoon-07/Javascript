@@ -116,3 +116,15 @@ function add(a, b) {
 }
 console.log(add(5, 3)); // Output: 8
 console.log(add(10, 20)); // Output: 30
+
+// Global Scope and Local Scope
+var globalVariable = "I am a global variable"; // Global Scope
+
+function myFunction() {
+    var localVariable = "I am a local variable"; // Local Scope
+    console.log(globalVariable); // Accessing global variable
+    console.log(localVariable); // Accessing local variable
+}
+
+myFunction();
+// console.log(localVariable); // This will cause an error because localVariable is not accessible outside the function
