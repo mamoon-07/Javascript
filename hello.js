@@ -104,3 +104,15 @@ shoppingList.shift();
 console.log(shoppingList);
 shoppingList.unshift("Cheese");    
 console.log(shoppingList);
+
+// Arguments Passed to Functions
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greet("Bob")); // Output: Hello, Bob!
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 3)); // Output: 8
+console.log(add(10, 20)); // Output: 30
