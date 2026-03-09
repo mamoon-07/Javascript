@@ -55,3 +55,14 @@ console.log(fullName);
 // Appending Variables to Strings
 var ageMessage = "I am " + age + " years old."; // ageMessage is now "I am 30 years old."
 console.log(ageMessage);
+
+// Arrays in JavaScript
+var fruits = ["Apple", "Banana", "Cherry"]; 
+console.log(fruits[0]); // Output: Apple
+console.log(fruits[1]); // Output: Banana
+console.log(fruits[2]); // Output: Cherry   
+var mixedArray = [1, "Hello", true, null];
+console.log(mixedArray[0]); // Output: 1
+console.log(mixedArray[1]); // Output: Hello
+console.log(mixedArray[2]); // Output: true
+console.log(mixedArray[3]); // Output: null 
