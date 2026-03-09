@@ -93,3 +93,14 @@ colors.shift(); // colors is now ["Green", "Blue"]
 console.log(colors);
 colors.unshift("Yellow"); // colors is now ["Yellow", "Green", "Blue"]
 console.log(colors);
+
+// Shopping List Example
+var shoppingList = ["Milk", "Bread", "Eggs"];
+shoppingList.push("Butter");    
+console.log(shoppingList);
+shoppingList.pop();    
+console.log(shoppingList);
+shoppingList.shift();    
+console.log(shoppingList);
+shoppingList.unshift("Cheese");    
+console.log(shoppingList);
