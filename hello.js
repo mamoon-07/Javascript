@@ -141,3 +141,10 @@ function noReturn() {
     console.log("This function does not return anything.");
 }
 console.log(noReturn()); // Output: This function does not return anything. followed by undefined
+
+// Assignment with a Returned Value
+function multiply(a, b) {
+    return a * b; // Returns the product of a and b
+}
+var result = multiply(4, 5); // result is now 20
+console.log(result); // Output: 20
