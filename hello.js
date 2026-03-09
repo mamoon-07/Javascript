@@ -135,3 +135,9 @@ function square(num) {
 }
 console.log(square(5)); // Output: 25
 console.log(square(10)); // Output: 100
+
+// Understanding Undefined Value returned from a Function
+function noReturn() {
+    console.log("This function does not return anything.");
+}
+console.log(noReturn()); // Output: This function does not return anything. followed by undefined
