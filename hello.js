@@ -148,3 +148,13 @@ function multiply(a, b) {
 }
 var result = multiply(4, 5); // result is now 20
 console.log(result); // Output: 20
+
+// Stand in Line Example
+function nextInLine(arr, item) {
+    arr.push(item); // Add the item to the end of the array
+    return arr.shift(); // Remove and return the first item from the array
+}   
+var testArr = [1, 2, 3, 4, 5];
+console.log("Before: " + JSON.stringify(testArr)); // Output: Before: [1,2,3,4,5]
+console.log(nextInLine(testArr, 6)); // Output: 1
+console.log("After: " + JSON.stringify(testArr)); // Output: After: [2,3,4,5,6]
