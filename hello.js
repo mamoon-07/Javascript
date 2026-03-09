@@ -66,3 +66,9 @@ console.log(mixedArray[0]); // Output: 1
 console.log(mixedArray[1]); // Output: Hello
 console.log(mixedArray[2]); // Output: true
 console.log(mixedArray[3]); // Output: null 
+
+//Nested Arrays
+var nestedArray = [[1, 2], [3, 4], [5, 6]];
+console.log(nestedArray[0][0]); // Output: 1
+console.log(nestedArray[1][1]); // Output: 4
+console.log(nestedArray[2][0]); // Output: 5    
