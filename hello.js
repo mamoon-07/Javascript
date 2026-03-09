@@ -86,3 +86,10 @@ numbers.push(4); // numbers is now [1, 2, 3, 4]
 console.log(numbers);
 numbers.pop(); // numbers is now [1, 2, 3]
 console.log(numbers);
+
+// Shift() and Unshift() Methods
+var colors = ["Red", "Green", "Blue"];
+colors.shift(); // colors is now ["Green", "Blue"]
+console.log(colors);
+colors.unshift("Yellow"); // colors is now ["Yellow", "Green", "Blue"]
+console.log(colors);
