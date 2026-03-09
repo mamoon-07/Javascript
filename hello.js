@@ -38,3 +38,10 @@ d /= 2; // d is now 33
 var greeting = "Hello, World!";
 console.log(greeting);
 
+// Escape Sequences in Strings
+var message = "He said, \"Hello!\""; // Using double quotes inside a string
+console.log(message);   
+var path = 'C:\\Users\\John'; // Using backslashes in a file path
+console.log(path);
+var multiline = "This is a multi-line string.\nIt spans multiple lines.";
+console.log(multiline);
