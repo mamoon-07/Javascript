@@ -17,3 +17,7 @@ var b = 35;
 var c = 33;
 var d = 66;
 var sum = a + b + c + d; // sum is now 139
+
+// Increment and Decrement Operators
+a++; // a is now 6
+b--; // b is now 34
