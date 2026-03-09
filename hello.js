@@ -25,3 +25,7 @@ b--; // b is now 34
 // Remainder Operator
 var remainder = 10 % 3; // remainder is now 1
 console.log(remainder);
+
+// Augmented Assignment Operators
+a += 5; // a is now 11
+b -= 5; // b is now 29      
