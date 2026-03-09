@@ -21,3 +21,7 @@ var sum = a + b + c + d; // sum is now 139
 // Increment and Decrement Operators
 a++; // a is now 6
 b--; // b is now 34
+
+// Remainder Operator
+var remainder = 10 % 3; // remainder is now 1
+console.log(remainder);
