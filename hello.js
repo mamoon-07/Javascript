@@ -128,3 +128,10 @@ function myFunction() {
 
 myFunction();
 // console.log(localVariable); // This will cause an error because localVariable is not accessible outside the function
+
+// Return a Value from a Function with Return
+function square(num) {
+    return num * num; // Returns the square of the number
+}
+console.log(square(5)); // Output: 25
+console.log(square(10)); // Output: 100
