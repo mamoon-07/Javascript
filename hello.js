@@ -29,3 +29,7 @@ console.log(remainder);
 // Augmented Assignment Operators
 a += 5; // a is now 11
 b -= 5; // b is now 29      
+
+// compound assignment with multiplication and division
+c *= 2; // c is now 66
+d /= 2; // d is now 33  
