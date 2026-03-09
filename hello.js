@@ -72,3 +72,10 @@ var nestedArray = [[1, 2], [3, 4], [5, 6]];
 console.log(nestedArray[0][0]); // Output: 1
 console.log(nestedArray[1][1]); // Output: 4
 console.log(nestedArray[2][0]); // Output: 5    
+
+// Multidimensional Arrays
+var multiDimensionalArray = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+console.log(multiDimensionalArray[0][0][0]); // Output: 1
+console.log(multiDimensionalArray[0][1][1]); // Output: 4
+console.log(multiDimensionalArray[1][0][0]); // Output: 5
+console.log(multiDimensionalArray[1][1][1]); // Output: 8
