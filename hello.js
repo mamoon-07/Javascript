@@ -51,3 +51,7 @@ var firstName = "John";
 var lastName = "Doe";
 var fullName = firstName + " " + lastName; // fullName is now "John Doe"
 console.log(fullName);
+
+// Appending Variables to Strings
+var ageMessage = "I am " + age + " years old."; // ageMessage is now "I am 30 years old."
+console.log(ageMessage);
