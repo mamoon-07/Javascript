@@ -826,3 +826,14 @@ console.log("Starting calculation...");
 const calculationResult = add(5, 3);
 
 console.log(`The result is: ${calculationResult}`); // Output: 8
+
+// getting input from the user
+import readline from 'readline';
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question('What is your name? ', (name) => {
+    console.log(`Hello, ${name}!`);
+    rl.close();
+});
