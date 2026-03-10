@@ -169,3 +169,11 @@ function isEven(num) {
 }
 console.log(isEven(4)); // Output: true
 console.log(isEven(7)); // Output: false
+
+// Equality Operators
+console.log(5 == "5"); // Output: true (loose equality)
+console.log(5 === "5"); // Output: false (strict equality)
+console.log(0 == false); // Output: true (loose equality)
+console.log(0 === false); // Output: false (strict equality)
+console.log(null == undefined); // Output: true (loose equality)
+console.log(null === undefined); // Output: false (strict equality)
