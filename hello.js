@@ -515,3 +515,9 @@ for (var m = 0; m < arr.length; m++) {
     }
 }
 
+// Do...While Loops
+var p = 1;
+do {
+    console.log(p); // Output: 0, 1, 2, 3, 4
+    p++;
+} while (p < 5);
