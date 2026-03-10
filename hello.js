@@ -224,3 +224,29 @@ console.log(grade(75)); // Output: C
 console.log(grade(65)); // Output: D
 console.log(grade(55)); // Output: F    
 
+// Golf Code Example
+function golfScore(par, strokes) {
+    if (strokes === 1) {
+        return "Hole-in-one!"; // Returns "Hole-in-one!" if the player gets a hole-in-one
+    } else if (strokes <= par - 2) {
+        return "Eagle"; // Returns "Eagle" if the player scores two or more under par
+    } else if (strokes === par - 1) {
+        return "Birdie"; // Returns "Birdie" if the player scores one under par
+    } else if (strokes === par) {
+        return "Par"; // Returns "Par" if the player scores exactly par
+    } else if (strokes === par + 1) {
+        return "Bogey"; // Returns "Bogey" if the player scores one over par
+    } else if (strokes === par + 2) {
+        return "Double Bogey"; // Returns "Double Bogey" if the player scores two over par
+    } else {
+        return "Go Home!"; // Returns "Go Home!" if the player scores three or more over par
+    }   
+}
+console.log(golfScore(5, 1)); // Output: Hole-in-one!
+console.log(golfScore(5, 3)); // Output: Eagle
+console.log(golfScore(5, 4)); // Output: Birdie
+console.log(golfScore(5, 5)); // Output: Par
+console.log(golfScore(5, 6)); // Output: Bogey
+console.log(golfScore(5, 7)); // Output: Double Bogey
+console.log(golfScore(5, 8)); // Output: Go Home!   
+
