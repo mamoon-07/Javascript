@@ -734,3 +734,10 @@ let cn = myArrayDestructuring2[2];
 console.log(an); // Output: 10
 console.log(bn); // Output: 20
 console.log(cn); // Output: 30
+
+// Destructuring Assignment with the Rest Operator
+const myArrayDestructuring3 = [1, 2, 3, 4, 5];
+const [a1, a2, ...rest] = myArrayDestructuring3;
+console.log(a1); // Output: 1
+console.log(a2); // Output: 2
+console.log(rest); // Output: [3, 4, 5] (the rest operator collects the remaining elements of the array into a new array)
