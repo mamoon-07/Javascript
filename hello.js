@@ -177,3 +177,15 @@ console.log(0 == false); // Output: true (loose equality)
 console.log(0 === false); // Output: false (strict equality)
 console.log(null == undefined); // Output: true (loose equality)
 console.log(null === undefined); // Output: false (strict equality)
+
+// Logical Operators
+function canVote(age, isCitizen) {
+    if (age >= 18 && isCitizen === true) {
+        return true; // Returns true if the person is old enough and is a citizen
+    } else {
+        return false; // Returns false if the person is not old enough to vote
+    }
+}
+console.log(canVote(20, true)); // Output: true
+console.log(canVote(16, true)); // Output: false
+console.log(canVote(20, false)); // Output: false
