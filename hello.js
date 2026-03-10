@@ -597,3 +597,9 @@ console.log(clubLookup("Real Madrid", "country")); // Output: Spain
 console.log(clubLookup("Barcelona", "titles")); // Output: 5
 console.log(clubLookup("Bayern Munich", "manager")); // Output: "No such property"
 console.log(clubLookup("Chelsea", "country")); // Output: "No such club"    
+
+// Generate Random Fractions with JavaScript
+function randomFraction() {
+    return Math.random(); // Returns a random number between 0 (inclusive) and 1 (exclusive)
+}
+console.log(randomFraction()); // Output: A random number between 0 and 1
