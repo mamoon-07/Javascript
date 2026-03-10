@@ -360,3 +360,9 @@ console.log(company.employees.employee1.name); // Output: Alice
 console.log(company.employees.employee1.position); // Output: Developer
 console.log(company.employees.employee2.name); // Output: Bob
 console.log(company.employees.employee2.position); // Output: Designer
+
+// Updating Object Properties
+person.age = 31; // Updates the age property of the person object to 31
+console.log(person.age); // Output: 31
+car.year = 2021; // Updates the year property of the car object to 2021
+console.log(car.year); // Output: 2021      
