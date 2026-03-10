@@ -111,11 +111,11 @@ function greet(name) {
 }
 console.log(greet("Alice")); // Output: Hello, Alice!
 console.log(greet("Bob")); // Output: Hello, Bob!
-function add(a, b) {
+function addNumbers(a, b) {
     return a + b;
 }
-console.log(add(5, 3)); // Output: 8
-console.log(add(10, 20)); // Output: 30
+console.log(addNumbers(5, 3)); // Output: 8
+console.log(addNumbers(10, 20)); // Output: 30
 
 // Global Scope and Local Scope
 var globalVariable = "I am a global variable"; // Global Scope
@@ -283,15 +283,15 @@ console.log(isGreater(5, 3)); // Output: true
 console.log(isGreater(2, 4)); // Output: false
 
 // Return Early Pattern for Functions
-function myFunction(a, b) {
+function sumNumbers(a, b) {
     if (a < 0 || b < 0) {
         return "Negative numbers are not allowed"; // Returns an error message if either a or b is negative
     }
     return a + b; // Returns the sum of a and b if both are non-negative
 }
-console.log(myFunction(5, 3)); // Output: 8
-console.log(myFunction(-1, 3)); // Output: Negative numbers are not allowed
-console.log(myFunction(5, -2)); // Output: Negative numbers are not allowed
+console.log(sumNumbers(5, 3)); // Output: 8
+console.log(sumNumbers(-1, 3)); // Output: Negative numbers are not allowed
+console.log(sumNumbers(5, -2)); // Output: Negative numbers are not allowed
 
 // Counting Cards Example
 var count = 0;
@@ -661,8 +661,6 @@ const myObjectConst = {
     age: 30
 };
 Object.freeze(myObjectConst);
-myObjectConst.name = "Jane";
-myObjectConst.age = 25;
 console.log(myObjectConst.name); // Output: John (the name property cannot be changed due to Object.freeze)
 console.log(myObjectConst.age); // Output: 30 (the age property cannot be changed due to Object.freeze)
 
@@ -684,11 +682,11 @@ const sumArray = myArrayHigherOrder.reduce((acc, x) => acc + x, 0); // Uses the 
 console.log(sumArray); // Output: 15
 
 // Default Parameters in Functions
-function greet(name = "Guest") {
+function greetDefault(name = "Guest") {
     return "Hello, " + name + "!"; // Returns a greeting message with the provided name or "Guest" if no name is provided
 }
-console.log(greet("Alice")); // Output: Hello, Alice!
-console.log(greet()); // Output: Hello, Guest!
+console.log(greetDefault("Alice")); // Output: Hello, Alice!
+console.log(greetDefault()); // Output: Hello, Guest!
 
 //Rest Parameters in Functions
 function sumAll(...numbers) {
@@ -698,11 +696,11 @@ console.log(sumAll(1, 2, 3)); // Output: 6
 console.log(sumAll(4, 5, 6, 7)); // Output: 22
 
 // Spread Operator in Functions
-function multiply(a, b, c) {
+function multiplyThree(a, b, c) {
     return a * b * c; // Returns the product of the three parameters
 }
 const numbersSpread = [2, 3, 4];
-console.log(multiply(...numbersSpread)); // Output: 24 (uses the spread operator to pass the elements of the array as individual arguments to the function)
+console.log(multiplyThree(...numbersSpread)); // Output: 24 (uses the spread operator to pass the elements of the array as individual arguments to the function)
 
 // Destructuring Assignment with Arrays
 const myArrayDestructuring = [1, 2, 3];
@@ -818,3 +816,13 @@ console.log(person2.greet()); // Output: Hello, my name is Frank and I am 32 yea
 person2.name = "Grace"; // Uses the setter method to update the name property
 person2.age = 29; // Uses the setter method to update the age property
 console.log(person2.greet()); // Output: Hello, my name is Grace and I am 29 years old. (calls the greet method again to see the updated properties)
+
+// import and export statements in JavaScript
+// hello.js
+import { add } from './addition.js'; 
+
+console.log("Starting calculation...");
+
+const calculationResult = add(5, 3);
+
+console.log(`The result is: ${calculationResult}`); // Output: 8
