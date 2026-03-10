@@ -689,3 +689,10 @@ function greet(name = "Guest") {
 }
 console.log(greet("Alice")); // Output: Hello, Alice!
 console.log(greet()); // Output: Hello, Guest!
+
+//Rest Parameters in Functions
+function sumAll(...numbers) {
+    return numbers.reduce((acc, x) => acc + x, 0); // Uses the reduce method to calculate the sum of all the numbers passed as arguments
+}
+console.log(sumAll(1, 2, 3)); // Output: 6
+console.log(sumAll(4, 5, 6, 7)); // Output: 22
