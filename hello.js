@@ -323,3 +323,21 @@ console.log(cc(3)); // Output: 2 Bet
 console.log(cc(7)); // Output: 2 Bet
 console.log(cc("K")); // Output: 1 Bet
 console.log(cc("A")); // Output: 0 Hold
+
+// Objects in JavaScript
+var person = {
+    name: "John",
+    age: 30,
+    isStudent: true
+};
+console.log(person.name); // Output: John
+console.log(person.age); // Output: 30
+console.log(person.isStudent); // Output: true
+var car = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2020
+};
+console.log(car.make); // Output: Toyota
+console.log(car.model); // Output: Camry
+console.log(car.year); // Output: 2020  
