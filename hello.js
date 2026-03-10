@@ -372,3 +372,9 @@ person.gender = "Male"; // Adds a new property called gender to the person objec
 console.log(person.gender); // Output: Male
 car.color = "Red"; // Adds a new property called color to the car object with the value "Red"
 console.log(car.color); // Output: Red
+
+// Deleting Properties from an Object
+delete person.isStudent; // Deletes the isStudent property from the person object
+console.log(person.isStudent); // Output: undefined
+delete car.model; // Deletes the model property from the car object
+console.log(car.model); // Output: undefined    
