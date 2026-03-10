@@ -158,3 +158,14 @@ var testArr = [1, 2, 3, 4, 5];
 console.log("Before: " + JSON.stringify(testArr)); // Output: Before: [1,2,3,4,5]
 console.log(nextInLine(testArr, 6)); // Output: 1
 console.log("After: " + JSON.stringify(testArr)); // Output: After: [2,3,4,5,6]
+
+// Boolean Values and Conditional Statements
+function isEven(num) {
+    if (num % 2 === 0) {    
+        return true; // Returns true if the number is even
+    } else {
+        return false; // Returns false if the number is odd
+    }
+}
+console.log(isEven(4)); // Output: true
+console.log(isEven(7)); // Output: false
