@@ -341,3 +341,22 @@ var car = {
 console.log(car.make); // Output: Toyota
 console.log(car.model); // Output: Camry
 console.log(car.year); // Output: 2020  
+
+// Nested Objects
+var company = {
+    name: "Tech Co",
+    employees: {    
+        employee1: {
+            name: "Alice",
+            position: "Developer"
+        },
+        employee2: {
+            name: "Bob",
+            position: "Designer"
+        }
+    }
+};
+console.log(company.employees.employee1.name); // Output: Alice
+console.log(company.employees.employee1.position); // Output: Developer
+console.log(company.employees.employee2.name); // Output: Bob
+console.log(company.employees.employee2.position); // Output: Designer
