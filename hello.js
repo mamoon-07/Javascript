@@ -443,3 +443,44 @@ console.log(myMusic[1].artist); // Output: The Beatles
 console.log(myMusic[1].title); // Output: Let It Be
 console.log(myMusic[1].release_year); // Output: 1970
 console.log(myMusic[1].formats); // Output: ["CD", "8T", "LP"]
+
+// Record Collection Example
+var recordCollection = {
+    2548: { 
+        albumTitle: "Slippery When Wet",
+        artist: "Bon Jovi",
+        tracks: [   
+            "Let It Rock",
+            "You Give Love a Bad Name"
+        ]
+    },
+    2468: {
+        albumTitle: "1999",
+        artist: "Prince",
+        tracks: [
+            "1999", 
+            "Little Red Corvette"
+        ]
+    },
+    1245: {
+        artist: "Robert Palmer",
+        tracks: []
+    },
+    5439: {
+        albumTitle: "ABBA Gold"
+    }
+};
+function updateRecords(id, prop, value) {
+    if (value === "") {
+        delete recordCollection[id][prop]; // Deletes the property from the record collection if the value is an empty string
+    } else if (prop === "tracks") {
+        recordCollection[id][prop] = recordCollection[id][prop] || []; // Initializes the tracks property as an empty array if it doesn't exist
+        recordCollection[id][prop].push(value); // Adds the value to the tracks array
+    } else {
+        recordCollection[id][prop] = value; // Updates or adds the property with the new value
+    }
+    return recordCollection; // Returns the updated record collection
+}
+console.log(updateRecords(5439, "artist", "ABBA")); // Output: { 2548: { albumTitle: 'Slippery When Wet', artist: 'Bon Jovi', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA' } }
+console.log(updateRecords(5439, "tracks", "Take a Chance on Me")); // Output: { 2548: { albumTitle: 'Slippery When Wet', artist: 'Bon Jovi', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA', tracks: [ 'Take a Chance on Me' ] } }
+console.log(updateRecords(2548, "artist", "")); // Output: { 2548: { albumTitle: 'Slippery When Wet', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA', tracks: [ 'Take a Chance on Me' ] } }
