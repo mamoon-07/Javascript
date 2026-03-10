@@ -487,7 +487,9 @@ console.log(updateRecords(2548, "artist", "")); // Output: { 2548: { albumTitle:
 
 // Loops in JavaScript
 for (var i = 0; i < 5; i++) {
-    console.log(i); // Output: 0, 1, 2, 3, 4
+    if (i%2 === 0) {
+        console.log(i); // Output: 0, 2, 4
+    }
 }
 var j = 5;
 while (j >= 0) {
@@ -500,3 +502,16 @@ var myArray = [10, 20, 30, 40, 50];
 for (var k = 0; k < myArray.length; k++) {
     console.log(myArray[k]); // Output: 10, 20, 30, 40, 50
 }
+
+// Nesting For Loops
+var arr = [
+    [1, 2], 
+    [3, 4],
+    [5, 6]
+];
+for (var m = 0; m < arr.length; m++) {
+    for (var n = 0; n < arr[m].length; n++) {
+        console.log(arr[m][n]); // Output: 1, 2, 3, 4, 5, 6
+    }
+}
+
