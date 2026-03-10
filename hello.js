@@ -752,3 +752,10 @@ function printPerson({ name, age, city }) {
     return name + " is " + age + " years old and lives in " + city + "."; // Uses destructuring assignment to extract the properties of the object and create a descriptive string
 }
 console.log(printPerson(myObjectDestructuring2)); // Output: Alice is 25 years old and lives in Los Angeles.
+
+// Template Literals in JavaScript
+const nameTemplate = "Bob";
+const ageTemplate = 30;
+const cityTemplate = "Chicago";
+const messageTemplate = `${nameTemplate} is ${ageTemplate} years old and lives in ${cityTemplate}.`;
+console.log(messageTemplate); // Output: Bob is 30 years old and lives in Chicago. (uses template literals to create a string with embedded expressions)
