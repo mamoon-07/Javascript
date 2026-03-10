@@ -741,3 +741,14 @@ const [a1, a2, ...rest] = myArrayDestructuring3;
 console.log(a1); // Output: 1
 console.log(a2); // Output: 2
 console.log(rest); // Output: [3, 4, 5] (the rest operator collects the remaining elements of the array into a new array)
+
+// Destructuring Assignment to Pass an Object as a Function's Parameters
+const myObjectDestructuring2 = {
+    name: "Alice",
+    age: 25,
+    city: "Los Angeles"
+};
+function printPerson({ name, age, city }) {
+    return name + " is " + age + " years old and lives in " + city + "."; // Uses destructuring assignment to extract the properties of the object and create a descriptive string
+}
+console.log(printPerson(myObjectDestructuring2)); // Output: Alice is 25 years old and lives in Los Angeles.
