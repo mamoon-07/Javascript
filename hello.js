@@ -638,3 +638,14 @@ function checkSign(num) {
 console.log(checkSign(5)); // Output: Positive
 console.log(checkSign(-3)); // Output: Negative
 console.log(checkSign(0)); // Output: Zero
+
+// var vs let vs const
+var x = 10;
+let y = 20;
+const z = 30;
+console.log(x); // Output: 10
+console.log(y); // Output: 20
+console.log(z); // Output: 30
+x = 15;
+y = 25;
+// z = 35; // This would cause an error since z is a constant
