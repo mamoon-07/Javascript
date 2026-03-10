@@ -674,3 +674,11 @@ console.log(squareArrow(4)); // Output: 16
 const greetArrow = () => "Hello, World!"; // An arrow function that takes no parameters and returns a greeting message
 console.log(greetArrow()); // Output: Hello, World!
 
+// Write Higher Order Arrow Functions
+const myArrayHigherOrder = [1, 2, 3, 4, 5];
+const squaredArray = myArrayHigherOrder.map(x => x * x); // Uses the map method to create a new array with the squares of the original array
+console.log(squaredArray); // Output: [1, 4, 9, 16, 25]
+const evenArray = myArrayHigherOrder.filter(x => x % 2 === 0); // Uses the filter method to create a new array with only the even numbers from the original array
+console.log(evenArray); // Output: [2, 4]
+const sumArray = myArrayHigherOrder.reduce((acc, x) => acc + x, 0); // Uses the reduce method to calculate the sum of all the numbers in the original array
+console.log(sumArray); // Output: 15
