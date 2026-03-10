@@ -484,3 +484,13 @@ function updateRecords(id, prop, value) {
 console.log(updateRecords(5439, "artist", "ABBA")); // Output: { 2548: { albumTitle: 'Slippery When Wet', artist: 'Bon Jovi', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA' } }
 console.log(updateRecords(5439, "tracks", "Take a Chance on Me")); // Output: { 2548: { albumTitle: 'Slippery When Wet', artist: 'Bon Jovi', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA', tracks: [ 'Take a Chance on Me' ] } }
 console.log(updateRecords(2548, "artist", "")); // Output: { 2548: { albumTitle: 'Slippery When Wet', tracks: [ 'Let It Rock', 'You Give Love a Bad Name' ] }, 2468: { albumTitle: '1999', artist: 'Prince', tracks: [ '1999', 'Little Red Corvette' ] }, 1245: { artist: 'Robert Palmer', tracks: [] }, 5439: { albumTitle: 'ABBA Gold', artist: 'ABBA', tracks: [ 'Take a Chance on Me' ] } }
+
+// Loops in JavaScript
+for (var i = 0; i < 5; i++) {
+    console.log(i); // Output: 0, 1, 2, 3, 4
+}
+var j = 0;
+while (j < 5) {
+    console.log(j); // Output: 0, 1, 2, 3, 4
+    j++;
+}
