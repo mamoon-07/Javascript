@@ -621,3 +621,12 @@ function convertToIntegerWithBase(str) {
 }
 console.log(convertToIntegerWithBase("1010")); // Output: 10
 console.log(convertToIntegerWithBase("1111")); // Output: 15
+
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+    return a === b ? "Equal" : "Not Equal"; // Returns "Equal" if a and b are strictly equal, otherwise returns "Not Equal"
+}
+console.log(checkEqual(5, 5)); // Output: Equal
+console.log(checkEqual(5, "5")); // Output: Not Equal
+console.log(checkEqual(10, 10)); // Output: Equal
+console.log(checkEqual(10, "10")); // Output: Not Equal
