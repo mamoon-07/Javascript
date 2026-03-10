@@ -411,3 +411,35 @@ var myObj = {
 console.log(myObj.hasOwnProperty("name")); // Output: true (checks if the name property exists in myObj)
 console.log(myObj.hasOwnProperty("age")); // Output: true (checks if the age property exists in myObj)
 console.log(myObj.hasOwnProperty("gender")); // Output: false (checks if the genderproperty exists in myObj)
+
+// Manipulating Complex Objects
+var myMusic = [
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [    
+            "CD",
+            "8T",
+            "LP"
+        ]
+    }
+];
+console.log(myMusic[0].artist); // Output: Billy Joel
+console.log(myMusic[0].title); // Output: Piano Man
+console.log(myMusic[0].release_year); // Output: 1973
+console.log(myMusic[0].formats); // Output: ["CD", "8T", "LP"]
+myMusic.push({  
+    "artist": "The Beatles",
+    "title": "Let It Be",
+    "release_year": 1970,
+    "formats": [
+        "CD",
+        "8T",       
+        "LP"
+    ]
+});
+console.log(myMusic[1].artist); // Output: The Beatles
+console.log(myMusic[1].title); // Output: Let It Be
+console.log(myMusic[1].release_year); // Output: 1970
+console.log(myMusic[1].formats); // Output: ["CD", "8T", "LP"]
