@@ -384,3 +384,21 @@ console.log(person.name); // Output: John (using dot notation)
 console.log(person["name"]); // Output: John (using bracket notation)
 var property = "age";
 console.log(person[property]); // Output: 31 (using bracket notation with a variable)   
+
+// Objects for Lookups
+function phoneticLookup(val) {
+    var result = "";
+    var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank"
+    };
+    result = lookup[val]; // Looks up the value in the lookup object and assigns it to result
+    return result; // Returns the result of the lookup
+}
+console.log(phoneticLookup("alpha")); // Output: Adams
+console.log(phoneticLookup("charlie")); // Output: Chicago
+console.log(phoneticLookup("foxtrot")); // Output: Frank
