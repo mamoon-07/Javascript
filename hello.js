@@ -402,3 +402,12 @@ function phoneticLookup(val) {
 console.log(phoneticLookup("alpha")); // Output: Adams
 console.log(phoneticLookup("charlie")); // Output: Chicago
 console.log(phoneticLookup("foxtrot")); // Output: Frank
+
+// Testing Objects for Properties
+var myObj = {
+    name: "John",
+    age: 30
+};
+console.log(myObj.hasOwnProperty("name")); // Output: true (checks if the name property exists in myObj)
+console.log(myObj.hasOwnProperty("age")); // Output: true (checks if the age property exists in myObj)
+console.log(myObj.hasOwnProperty("gender")); // Output: false (checks if the genderproperty exists in myObj)
