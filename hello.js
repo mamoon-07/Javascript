@@ -725,3 +725,12 @@ console.log(per_name); // Output: John
 console.log(per_age); // Output: 30
 console.log(city); // Output: New York
 console.log(country); // Output: USA        
+
+// Destructuring Assignment to Assign Variables from Arrays
+const myArrayDestructuring2 = [10, 20, 30];
+let an = myArrayDestructuring2[0];
+let bn = myArrayDestructuring2[1];
+let cn = myArrayDestructuring2[2];
+console.log(an); // Output: 10
+console.log(bn); // Output: 20
+console.log(cn); // Output: 30
