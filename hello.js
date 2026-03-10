@@ -489,8 +489,14 @@ console.log(updateRecords(2548, "artist", "")); // Output: { 2548: { albumTitle:
 for (var i = 0; i < 5; i++) {
     console.log(i); // Output: 0, 1, 2, 3, 4
 }
-var j = 0;
-while (j < 5) {
+var j = 5;
+while (j >= 0) {
     console.log(j); // Output: 0, 1, 2, 3, 4
-    j++;
+    j--;
+}
+
+// Iterating through an Array with a For Loop
+var myArray = [10, 20, 30, 40, 50];
+for (var k = 0; k < myArray.length; k++) {
+    console.log(myArray[k]); // Output: 10, 20, 30, 40, 50
 }
