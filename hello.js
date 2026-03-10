@@ -603,3 +603,9 @@ function randomFraction() {
     return Math.random(); // Returns a random number between 0 (inclusive) and 1 (exclusive)
 }
 console.log(randomFraction()); // Output: A random number between 0 and 1
+
+// Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10); // Returns a random whole number between 0 and 9
+}
+console.log(randomWholeNum()); // Output: A random whole number between 0 and 9
