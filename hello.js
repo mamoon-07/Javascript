@@ -274,3 +274,10 @@ console.log(caseInSwitch(1)); // Output: alpha
 console.log(caseInSwitch(2)); // Output: beta
 console.log(caseInSwitch(3)); // Output: gamma
 console.log(caseInSwitch(4)); // Output: delta
+
+// Returning Boolean Values from Functions
+function isGreater(a, b) {
+    return a > b; // Returns true if a is greater than b, otherwise returns false
+}
+console.log(isGreater(5, 3)); // Output: true
+console.log(isGreater(2, 4)); // Output: false
