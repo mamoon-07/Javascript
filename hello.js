@@ -654,3 +654,14 @@ y = 25;
 const myArrayConst = [1, 2, 3];
 myArrayConst.push(4);
 console.log(myArrayConst); // Output: [1, 2, 3, 4]
+
+// Prevent Object Mutation
+const myObjectConst = {
+    name: "John",   
+    age: 30
+};
+Object.freeze(myObjectConst);
+myObjectConst.name = "Jane";
+myObjectConst.age = 25;
+console.log(myObjectConst.name); // Output: John (the name property cannot be changed due to Object.freeze)
+console.log(myObjectConst.age); // Output: 30 (the age property cannot be changed due to Object.freeze)
