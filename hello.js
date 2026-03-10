@@ -665,3 +665,12 @@ myObjectConst.name = "Jane";
 myObjectConst.age = 25;
 console.log(myObjectConst.name); // Output: John (the name property cannot be changed due to Object.freeze)
 console.log(myObjectConst.age); // Output: 30 (the age property cannot be changed due to Object.freeze)
+
+// Use Arrow Functions to Write Concise Anonymous Functions
+const myFunctionArrow = (a, b) => a + b; // An arrow function that takes two parameters and returns their sum
+console.log(myFunctionArrow(5, 3)); // Output: 8
+const squareArrow = x => x * x; // An arrow function that takes one parameter and returns its square
+console.log(squareArrow(4)); // Output: 16
+const greetArrow = () => "Hello, World!"; // An arrow function that takes no parameters and returns a greeting message
+console.log(greetArrow()); // Output: Hello, World!
+
