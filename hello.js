@@ -189,3 +189,17 @@ function canVote(age, isCitizen) {
 console.log(canVote(20, true)); // Output: true
 console.log(canVote(16, true)); // Output: false
 console.log(canVote(20, false)); // Output: false
+
+// If Statements and Else Statements
+function checkNumber(num) {
+    if (num > 0) {
+        return "Positive"; // Returns "Positive" if the number is greater than 0
+    } else if (num < 0) {
+        return "Negative"; // Returns "Negative" if the number is less than 0
+    } else {
+        return "Zero"; // Returns "Zero" if the number is equal to 0
+    }   
+}
+console.log(checkNumber(5)); // Output: Positive
+console.log(checkNumber(-3)); // Output: Negative
+console.log(checkNumber(0)); // Output: Zero
