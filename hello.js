@@ -378,3 +378,9 @@ delete person.isStudent; // Deletes the isStudent property from the person objec
 console.log(person.isStudent); // Output: undefined
 delete car.model; // Deletes the model property from the car object
 console.log(car.model); // Output: undefined    
+
+// Dot Notation vs Bracket Notation
+console.log(person.name); // Output: John (using dot notation)
+console.log(person["name"]); // Output: John (using bracket notation)
+var property = "age";
+console.log(person[property]); // Output: 31 (using bracket notation with a variable)   
