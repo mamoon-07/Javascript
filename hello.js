@@ -630,3 +630,11 @@ console.log(checkEqual(5, 5)); // Output: Equal
 console.log(checkEqual(5, "5")); // Output: Not Equal
 console.log(checkEqual(10, 10)); // Output: Equal
 console.log(checkEqual(10, "10")); // Output: Not Equal
+
+// Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+    return num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero"; // Returns "Positive" if num is greater than 0, "Negative" if num is less than 0, and "Zero" if num is equal to 0
+}
+console.log(checkSign(5)); // Output: Positive
+console.log(checkSign(-3)); // Output: Negative
+console.log(checkSign(0)); // Output: Zero
