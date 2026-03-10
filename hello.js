@@ -682,3 +682,10 @@ const evenArray = myArrayHigherOrder.filter(x => x % 2 === 0); // Uses the filte
 console.log(evenArray); // Output: [2, 4]
 const sumArray = myArrayHigherOrder.reduce((acc, x) => acc + x, 0); // Uses the reduce method to calculate the sum of all the numbers in the original array
 console.log(sumArray); // Output: 15
+
+// Default Parameters in Functions
+function greet(name = "Guest") {
+    return "Hello, " + name + "!"; // Returns a greeting message with the provided name or "Guest" if no name is provided
+}
+console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greet()); // Output: Hello, Guest!
