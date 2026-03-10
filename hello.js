@@ -790,3 +790,31 @@ class Person {
 }
 const person1 = new Person("Eve", 28);
 console.log(person1.greet()); // Output: Hello, my name is Eve and I am 28 years old. (creates an instance of the Person class and calls the greet method)
+
+// Use getters and setters to Control Access to an Objects Properties
+class Person2 {
+    constructor(name, age) {    
+        this._name = name; // Initializes the _name property of the Person2 class
+        this._age = age; // Initializes the _age property of the Person2 class
+    }   
+    get name() {
+        return this._name; // A getter method that returns the value of the _name property
+    }
+    set name(newName) {
+        this._name = newName; // A setter method that updates the value of the _name property
+    }
+    get age() {
+        return this._age; // A getter method that returns the value of the _age property
+    }
+    set age(newAge) {
+        this._age = newAge; // A setter method that updates the value of the _age property
+    }
+    greet() {
+        return `Hello, my name is ${this._name} and I am ${this._age} years old.`; // A method that uses template literals to create a greeting message
+    }
+}
+const person2 = new Person2("Frank", 32);
+console.log(person2.greet()); // Output: Hello, my name is Frank and I am 32 years old. (creates an instance of the Person2 class and calls the greet method)
+person2.name = "Grace"; // Uses the setter method to update the name property
+person2.age = 29; // Uses the setter method to update the age property
+console.log(person2.greet()); // Output: Hello, my name is Grace and I am 29 years old. (calls the greet method again to see the updated properties)
