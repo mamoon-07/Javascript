@@ -366,3 +366,9 @@ person.age = 31; // Updates the age property of the person object to 31
 console.log(person.age); // Output: 31
 car.year = 2021; // Updates the year property of the car object to 2021
 console.log(car.year); // Output: 2021      
+
+// Adding New Properties to an Object
+person.gender = "Male"; // Adds a new property called gender to the person object with the value "Male"
+console.log(person.gender); // Output: Male
+car.color = "Red"; // Adds a new property called color to the car object with the value "Red"
+console.log(car.color); // Output: Red
