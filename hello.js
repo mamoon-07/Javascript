@@ -696,3 +696,10 @@ function sumAll(...numbers) {
 }
 console.log(sumAll(1, 2, 3)); // Output: 6
 console.log(sumAll(4, 5, 6, 7)); // Output: 22
+
+// Spread Operator in Functions
+function multiply(a, b, c) {
+    return a * b * c; // Returns the product of the three parameters
+}
+const numbersSpread = [2, 3, 4];
+console.log(multiply(...numbersSpread)); // Output: 24 (uses the spread operator to pass the elements of the array as individual arguments to the function)
