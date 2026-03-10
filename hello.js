@@ -766,3 +766,14 @@ const ageConcise = 35;
 const cityConcise = "San Francisco";
 const personConcise = { nameConcise, ageConcise, cityConcise };
 console.log(personConcise); // Output: { nameConcise: 'Charlie', ageConcise: 35, cityConcise: 'San Francisco' } (uses concise object literal syntax to create an object with properties that have the same name as the variables)
+
+// Concise Declarative Functions
+const personConcise2 = {
+    name: "David",
+    age: 40,
+    city: "Seattle",
+    greet() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old lived in ${this.city}.`; // A concise method definition that uses template literals to create a greeting message
+    }
+};
+console.log(personConcise2.greet()); // Output: Hello, my name is David and I am 40 years old lived in Seattle. (calls the greet method of the personConcise2 object)
