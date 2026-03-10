@@ -281,3 +281,14 @@ function isGreater(a, b) {
 }
 console.log(isGreater(5, 3)); // Output: true
 console.log(isGreater(2, 4)); // Output: false
+
+// Return Early Pattern for Functions
+function myFunction(a, b) {
+    if (a < 0 || b < 0) {
+        return "Negative numbers are not allowed"; // Returns an error message if either a or b is negative
+    }
+    return a + b; // Returns the sum of a and b if both are non-negative
+}
+console.log(myFunction(5, 3)); // Output: 8
+console.log(myFunction(-1, 3)); // Output: Negative numbers are not allowed
+console.log(myFunction(5, -2)); // Output: Negative numbers are not allowed
