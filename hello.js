@@ -547,3 +547,53 @@ console.log(lookUpProfile("Cristiano", "likes")); // Output: ["Football", "Juven
 console.log(lookUpProfile("Cristiano", "number")); // Output: "123456789"
 console.log(lookUpProfile("Cristiano", "age")); // Output: "No such property"
 console.log(lookUpProfile("Lionel", "likes")); // Output: "No such contact"
+
+// Top European Football Clubs lookup Function Example
+var footballClubs = [
+    {
+        "name": "Real Madrid",
+        "country": "Spain",
+        "titles": 15
+    },
+    {
+        "name": "Barcelona",
+        "country": "Spain",
+        "titles": 5
+    },
+    {
+        "name": "Bayern Munich",
+        "country": "Germany",
+        "titles": 6
+    },
+    {
+        "name": "Manchester United",
+        "country": "England",
+        "titles": 3
+    },
+    {
+        "name": "Liverpool",
+        "country": "England",
+        "titles": 6
+    }, 
+    {
+        "name": "AC Milan",
+        "country": "Italy",
+        "titles": 7
+    }
+];
+function clubLookup(name, prop) {
+    for (var r = 0; r < footballClubs.length; r++) {
+        if (footballClubs[r].name === name) {
+            if (footballClubs[r].hasOwnProperty(prop)) {
+                return footballClubs[r][prop]; // Returns the value of the property if it exists
+            } else {
+                return "No such property"; // Returns "No such property" if the property does not exist
+            }
+        }
+    }
+    return "No such club"; // Returns "No such club" if the name does not match any club
+}
+console.log(clubLookup("Real Madrid", "country")); // Output: Spain
+console.log(clubLookup("Barcelona", "titles")); // Output: 5
+console.log(clubLookup("Bayern Munich", "manager")); // Output: "No such property"
+console.log(clubLookup("Chelsea", "country")); // Output: "No such club"    
