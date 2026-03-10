@@ -521,3 +521,29 @@ do {
     console.log(p); // Output: 0, 1, 2, 3, 4
     p++;
 } while (p < 5);
+
+// Cristiano Ronaldo Profile Lookup Example
+var contacts = [
+    {
+        "firstName": "Cristiano",
+        "lastName": "Ronaldo",
+        "number": "07",
+        "likes": ["Football", "Juventus", "Portugal"]
+    }
+];
+function lookUpProfile(name, prop) {
+    for (var q = 0; q < contacts.length; q++) {
+        if (contacts[q].firstName === name) {
+            if (contacts[q].hasOwnProperty(prop)) {
+                return contacts[q][prop]; // Returns the value of the property if it exists
+            } else {
+                return "No such property"; // Returns "No such property" if the property does not exist
+            }
+        }
+    }
+    return "No such contact"; // Returns "No such contact" if the name does not match any contact
+}
+console.log(lookUpProfile("Cristiano", "likes")); // Output: ["Football", "Juventus", "Portugal"]
+console.log(lookUpProfile("Cristiano", "number")); // Output: "123456789"
+console.log(lookUpProfile("Cristiano", "age")); // Output: "No such property"
+console.log(lookUpProfile("Lionel", "likes")); // Output: "No such contact"
