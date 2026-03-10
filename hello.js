@@ -710,3 +710,18 @@ const [first, second, third] = myArrayDestructuring; // Uses destructuring assig
 console.log(first); // Output: 1
 console.log(second); // Output: 2
 console.log(third); // Output: 3
+
+// Destructuring Assignment with Nested objects
+const myObjectDestructuring = {
+    per_name: "John",
+    per_age: 30,
+    address: {
+        city: "New York",
+        country: "USA"
+    }
+};
+const { per_name, per_age, address: { city, country } } = myObjectDestructuring;
+console.log(per_name); // Output: John
+console.log(per_age); // Output: 30
+console.log(city); // Output: New York
+console.log(country); // Output: USA        
