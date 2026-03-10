@@ -203,3 +203,24 @@ function checkNumber(num) {
 console.log(checkNumber(5)); // Output: Positive
 console.log(checkNumber(-3)); // Output: Negative
 console.log(checkNumber(0)); // Output: Zero
+
+// Chaining If Else Statements
+function grade(score) {
+    if (score >= 90) {
+        return "A"; // Returns "A" for scores 90 and above
+    } else if (score >= 80) {
+        return "B"; // Returns "B" for scores 80-89
+    } else if (score >= 70) {
+        return "C"; // Returns "C" for scores 70-79
+    } else if (score >= 60) {
+        return "D"; // Returns "D" for scores 60-69
+    } else {
+        return "F"; // Returns "F" for scores below 60
+    }   
+}
+console.log(grade(95)); // Output: A
+console.log(grade(85)); // Output: B
+console.log(grade(75)); // Output: C
+console.log(grade(65)); // Output: D
+console.log(grade(55)); // Output: F    
+
