@@ -609,3 +609,15 @@ function randomWholeNum() {
     return Math.floor(Math.random() * 10); // Returns a random whole number between 0 and 9
 }
 console.log(randomWholeNum()); // Output: A random whole number between 0 and 9
+
+// ParseInt Function Example
+function convertToInteger(str) {
+    return parseInt(str); // Converts the string to an integer
+}
+console.log(convertToInteger("42")); // Output: 42
+console.log(convertToInteger("100")); // Output: 100
+function convertToIntegerWithBase(str) {
+    return parseInt(str, 2); // Converts the binary string to an integer
+}
+console.log(convertToIntegerWithBase("1010")); // Output: 10
+console.log(convertToIntegerWithBase("1111")); // Output: 15
