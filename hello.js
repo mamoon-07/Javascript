@@ -777,3 +777,16 @@ const personConcise2 = {
     }
 };
 console.log(personConcise2.greet()); // Output: Hello, my name is David and I am 40 years old lived in Seattle. (calls the greet method of the personConcise2 object)
+
+// Use class Syntax to Define a Constructor Function
+class Person {
+    constructor(name, age) {
+        this.my_name = name; // Initializes the name property of the Person class
+        this.my_age = age; // Initializes the age property of the Person class
+    }
+    greet() {
+        return `Hello, my name is ${this.my_name} and I am ${this.my_age} years old.`; // A method that uses template literals to create a greeting message
+    }
+}
+const person1 = new Person("Eve", 28);
+console.log(person1.greet()); // Output: Hello, my name is Eve and I am 28 years old. (creates an instance of the Person class and calls the greet method)
