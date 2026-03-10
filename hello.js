@@ -759,3 +759,10 @@ const ageTemplate = 30;
 const cityTemplate = "Chicago";
 const messageTemplate = `${nameTemplate} is ${ageTemplate} years old and lives in ${cityTemplate}.`;
 console.log(messageTemplate); // Output: Bob is 30 years old and lives in Chicago. (uses template literals to create a string with embedded expressions)
+
+// Concise Object Literal Declarations Using Simple Fields
+const nameConcise = "Charlie";
+const ageConcise = 35;
+const cityConcise = "San Francisco";
+const personConcise = { nameConcise, ageConcise, cityConcise };
+console.log(personConcise); // Output: { nameConcise: 'Charlie', ageConcise: 35, cityConcise: 'San Francisco' } (uses concise object literal syntax to create an object with properties that have the same name as the variables)
