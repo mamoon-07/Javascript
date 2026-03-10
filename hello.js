@@ -649,3 +649,8 @@ console.log(z); // Output: 30
 x = 15;
 y = 25;
 // z = 35; // This would cause an error since z is a constant
+
+// Mutate an Array Declared with const
+const myArrayConst = [1, 2, 3];
+myArrayConst.push(4);
+console.log(myArrayConst); // Output: [1, 2, 3, 4]
