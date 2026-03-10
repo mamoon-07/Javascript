@@ -703,3 +703,10 @@ function multiply(a, b, c) {
 }
 const numbersSpread = [2, 3, 4];
 console.log(multiply(...numbersSpread)); // Output: 24 (uses the spread operator to pass the elements of the array as individual arguments to the function)
+
+// Destructuring Assignment with Arrays
+const myArrayDestructuring = [1, 2, 3];
+const [first, second, third] = myArrayDestructuring; // Uses destructuring assignment to assign the elements of the array to individual variables
+console.log(first); // Output: 1
+console.log(second); // Output: 2
+console.log(third); // Output: 3
